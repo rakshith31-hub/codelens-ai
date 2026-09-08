@@ -1,5 +1,4 @@
-# AutoDocs AI — Autonomous Multi-Agent Code Documentation & Review System
-
+# CodeLens AI (AutoDocs AI) — Autonomous Multi-Agent Code Documentation & Review System
 AutoDocs AI is a small agentic system that reviews a Python codebase and generates documentation + review comments. It combines **RAG**, a **Neo4j code dependency graph**, and a **LangGraph multi-agent workflow** to ground an LLM reviewer in both semantic and structural context.
 
 ## What it demonstrates
