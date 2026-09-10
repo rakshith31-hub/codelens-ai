@@ -26,6 +26,14 @@ def _get_llm():
             api_key=settings.anthropic_api_key,
         )
 
+    if settings.llm_provider == "groq":
+        from langchain_groq import ChatGroq
+
+        return ChatGroq(
+            model=settings.llm_model,
+            api_key=settings.groq_api_key,
+        )
+
     from langchain_openai import ChatOpenAI
 
     return ChatOpenAI(
